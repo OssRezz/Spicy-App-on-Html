@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Registro Proveedores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--JQUERY-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     
+     <!-- Los iconos tipo Solid de Fontawesomeclass="footer"-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+     <!--Fuentes-->
+     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Walter+Turncoat&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+     <!--Carpeta de estilos-->
+    <link rel="stylesheet" type="text/css" href="css/Stylos.css">
+</head>
+
+<body>
+    
+        <div class="container-fluid"> <!--Incio del grid-->
+
+            <div class="row"> <!--Esta es la imagen del banner, tengo que modificarla y ponerle "El CONDIMENTERO"-->
+                <div class="col-12"><img src="img/Herbs_Spices_2000x406.png" class="img"></div>
+            </div>
+            
+            <div class="row"> 
+                <div class="col-2" style="width: 500px">
+
+                      
+                </div> 
+                <div class="col-8">
+                    
+                        <div class="row"><!-- Boton del catalogo-->
+                            <div class="col-12">
+
+                            </div>
+                        </div>
+
+                        <!-- Santi de aqui en adelante puedes comenzar a crear todo el contenido del catalogo, Si cambias algo de arriba
+                        me dices para yo tambien cambiarlo.-->
+
+                        <!-- Aqui comienza el contenido-->
+
+                        <div class="row">
+                            <div class="col-12 letras">
+                                <h1>Registro de Proveedores</h1>
+                                <h3>El condimentero</h3>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="row"> <!--Fomulario-->
+                            <div class="col-12 ">
+                                <div class="well well-sm">
+                                    <form action="VikingosAction" class="form-horizontal" method="post">
+                                        <fieldset>
+                                            <legend class="text-center header"></legend><!--Por si quiren colocar un titulo-->
+                    
+                                            <div class="form-group"><!--Item de nombre de proveedor-->
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon blanco"></i></span>
+                                                <div class="col-md-8">
+                                                    <input id="fname" name="name" type="text" placeholder="Nombre del Proveedor" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group"><!--Item de contacto del proveedor-->
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="material-icons blanco">computer</i></span>
+                                                <div class="col-md-8">
+                                                    <input id="fname" name="name" type="text" placeholder="Contacto con el proveedor (Medio por el cual se comunica con el proveedor)" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group"><!--Item de color representativo del proveedor-->
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="material-icons blanco">favorite</i></span>
+                                                <div class="col-md-8">
+                                                    <input id="fname" name="name" type="text" placeholder="Color representativo (Para clasificacion de los proveedores)" class="form-control">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="form-group"><!--Item de cedula-->
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon blanco"></i></span>
+                                                <div class="col-md-8">
+                                                    <input id="lname" name="name" type="text" placeholder="Cedula / NIT" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group"><!--Item de direccion-->
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-car blanco"></i></span>
+                                                <div class="col-md-8">
+                                                    <input id="lname" name="name" type="text" placeholder="Direccion" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group"><!--Item de telefono-->
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon blanco"></i></span>
+                                                <div class="col-md-8">
+                                                    <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="form-group"><!--Item de productos consumidos por el proveedor-->
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-coffee blanco"></i></span>
+                                                <div class="col-md-8">
+                                                    <input id="productos" name="email" type="text" placeholder="Productos que consume el proveedor" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group"><!--Item de cantidad promedio-->
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-coffee blanco"></i></span>
+                                                <div class="col-md-8">
+                                                    <input id="cantidad" name="email" type="text" placeholder="Cantidad promedio" class="form-control">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="form-group"><!--Item de descuento-->
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-thumbs-up blanco"></i></span>
+                                                <div class="col-md-8 letra">
+                                                    <input id="deudas" name="email" type="text" placeholder="Cuanto se le debe" class="form-control alineado">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="form-group"><!--Item de Nota-->
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-file blanco"></i></span>
+                                                <div class="col-md-8 letra">
+                                                    Nota
+                                                    <textarea class="form-control" id="message" name="message"  rows="7"></textarea>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="form-group"><!--Boton de enviar-->
+                                                <div class="col-12 text-center  ">
+                                                    <button class="btn btn-danger btn-lg" id="funcionemarica10" role="button" aria-pressed="true" style="margin-right: 20px;">Enviar</button>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="form-group"><!--Boton de cancelar-->
+                                                <div class="col-12 text-center  ">
+                                                    <button class="btn btn-danger btn-lg" id="funcionemarica11" role="button" aria-pressed="true" style="margin-left: 20px;">Cancelar</button>
+                                                      
+                                                </div>
+                                                
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div> 
+                        <div class="row ">
+
+                            <div class="col-6"></div>
+                            <div class="col-6"></div>
+                        </div>        
+                        
+                        <div class="row ">
+
+                            <div class="col-6"></div>
+                            <div class="col-6"></div>
+                        </div>   
+                        
+                        
+                </div>
+            </div>
+                <div class="col-2" style="width: 500px"><!-- Esta es la parte lateral, basada en el design que hicieron-->
+
+                </div> 
+            
+            
+            
+                 <div class="row "> <!-- Aqui comienza el footer-->
+        
+                 <div class="col-12 ">
+
+                 <div class="row">
+                 <div class="col-4">
+                   <img src="img/Griffith_Logo_Rev_RGB.png" style="width: 38%; margin-left: 100px;">
+                 </div>
+                 <div class="col-4 text-center" style="color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+                   <i><h6> facebook/ElCondimentero.com  </h6></i>
+                   <i><h6> &#128222; 777 77 77  </h6></i>
+                   <i><h6> &#128231; Elcondimentero@condimentero.co</h6></i>
+                   <i><h6>&#174; Todos los derechos reservados</h6></i>
+               
+                 </div>
+                 <div class="col-4">
+                   <img src="img/logo.png" style="width: 30%; margin-left: 300px;">
+                 </div>
+                 </div>
+
+                 </div>
+                 </div> <!-- Finaliza el footer-->
+        </div>
+
+</body>
+
+</html>

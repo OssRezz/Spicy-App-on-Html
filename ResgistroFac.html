@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<head>
+    <!--Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <title>Condimentos S.A.S</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--JQUERY-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     
+     <!-- Los iconos tipo Solid de Fontawesomeclass="footer"-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+ 
+    <link rel="stylesheet" type="text/css" href="css/Stylos.css">
+</head>
+
+<body>
+    
+        <div class="container-fluid"> <!--Incio del grid-->
+
+            <div class="row"> <!--Esta es la imagen del banner, tengo que modificarla y ponerle "El CONDIMENTERO"-->
+                <div class="col-12"><img src="img/Herbs_Spices_2000x406.png" class="img"></div>
+            </div>
+
+            <div class="row" style="height: 50px;"> <!-- Este es el menu principal -->
+
+            </div>
+            
+
+            <div class="row"> 
+                <div class="col-2" style="width: 500px">
+
+                </div> 
+   
+                <div class="col-8" style="padding-top: 10px;">
+                    
+                        <div class="row"><!-- Header del registro de factura-->
+                            <div class="col-12  text-center">
+                                <p class="RegistroFac">Registro De Factura</p><br>
+                                <p class="condimentero">El condimentero</p>
+                            </div>
+                        </div>
+
+                        <!-- Aqui comienza el contenido-->
+                        
+                        <div class="row">
+
+                            <div class="col-12" style="padding-top: 40px;">
+
+                                <form action="VikingosAction" method="POST">
+
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                        <label for="inputEmail4" style="color: white;">Proveedor/Cliente:</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Ingrese Provee/Cliente:">
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <label for="fecha" style="color: white;">Fecha:</label>
+                                        <input type="date" class="form-control" id="fecha" placeholder="Fecha">
+                                      </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                      <label for="Address" style="color: white;">Dirección:</label>
+                                      <input type="text" class="form-control" id="Address" placeholder="1234 Main St">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                      <label for="Email" style="color: white;">Email:</label>
+                                      <input type="text" class="form-control" id="Email" placeholder="Ingrese su Email @quepereza.com">
+                                    </div>
+
+                                <!--Aqui comienza la lista de productos facturados-->
+                                <div class="form-row" style="padding-top: 60px;">
+                                  
+                                    <div class="form-group col-md-4">
+                                            <label for="inputState" style="color: white;">Productos: </label>
+                                            <select id="inputState" class="form-control">
+                                              <option selected>...otro</option>
+                                              <option>#1523--Azucar</option>
+                                              <option>#2421--Sal</option>
+                                              <option>#0897--Color Rojo</option>
+                                              <option>#7654--Color Amarillo</option>
+                                              <option>#6412--Up paisa</option>
+                                            </select>
+                                    </div>
+
+                                    
+
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;">Valor Unidad:</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+
+
+                                    <div class="form-group col-md-1">
+                                        <label for="inputZip" style="color: white;">Cantidad:</label>
+                                        <input type="number" class="form-control" id="inputZip">
+                                      </div>
+                                     
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;">U. Medida</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>...otro</option>
+                                            <option>Kilos</option>
+                                            <option>Gramos</option>
+                                            <option>Litros</option>
+                                          </select>
+                                    </div>
+
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;">Precio Total: </label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+
+                                </div>
+                                <!--Segundo producto-->
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-4">
+                                            <label for="inputState" style="color: white;"></label>
+                                            <select id="inputState" class="form-control">
+                                              <option selected>...otro</option>
+                                              <option>#1523--Azucar</option>
+                                              <option>#2421--Sal</option>
+                                              <option>#0897--Color Rojo</option>
+                                              <option>#7654--Color Amarillo</option>
+                                              <option>#6412--Up paisa</option>
+                                            </select>
+                                    </div>
+
+                                    
+
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;"></label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+
+
+                                    <div class="form-group col-md-1">
+                                        <label for="inputZip" style="color: white;"></label>
+                                        <input type="number" class="form-control" id="inputZip">
+                                      </div>
+                                     
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;"></label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>...otro</option>
+                                            <option>Kilos</option>
+                                            <option>Gramos</option>
+                                            <option>Litros</option>
+                                          </select>
+                                    </div>
+
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;"></label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+
+                                </div>
+
+                                <!--Tercer Producto-->
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-4">
+                                            <label for="inputState" style="color: white;"></label>
+                                            <select id="inputState" class="form-control">
+                                              <option selected>...otro</option>
+                                              <option>#1523--Azucar</option>
+                                              <option>#2421--Sal</option>
+                                              <option>#0897--Color Rojo</option>
+                                              <option>#7654--Color Amarillo</option>
+                                              <option>#6412--Up paisa</option>
+                                            </select>
+                                    </div>
+
+                                    
+
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;"></label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+
+
+                                    <div class="form-group col-md-1">
+                                        <label for="inputZip" style="color: white;"></label>
+                                        <input type="number" class="form-control" id="inputZip">
+                                      </div>
+                                     
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;"></label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>...otro</option>
+                                            <option>Kilos</option>
+                                            <option>Gramos</option>
+                                            <option>Litros</option>
+                                          </select>
+                                    </div>
+
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;"></label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+
+                                </div>
+
+                                
+
+                                <!--Cuarto producto-->
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-4">
+                                            <label for="inputState" style="color: white;"></label>
+                                            <select id="inputState" class="form-control">
+                                              <option selected>...otro</option>
+                                              <option>#1523--Azucar</option>
+                                              <option>#2421--Sal</option>
+                                              <option>#0897--Color Rojo</option>
+                                              <option>#7654--Color Amarillo</option>
+                                              <option>#6412--Up paisa</option>
+                                            </select>
+                                    </div>
+
+                                    
+
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;"></label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+
+
+                                    <div class="form-group col-md-1">
+                                        <label for="inputZip" style="color: white;"></label>
+                                        <input type="number" class="form-control" id="inputZip">
+                                      </div>
+                                     
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;"></label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>...otro</option>
+                                            <option>Kilos</option>
+                                            <option>Gramos</option>
+                                            <option>Litros</option>
+                                          </select>
+                                    </div>
+
+                                    <div class="form-group col-md-2">
+                                        <label for="inputCity" style="color: white;"></label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                  
+                                </div>
+
+
+                                <div class="form-group text-center" style="padding-top: 60px; padding-bottom: 60px;">
+                                    <button class="btn btn-danger btn-lg" id="funcionemarica" role="button" aria-pressed="true" style="margin-right: 20px;">Enviar</button>
+
+                                    <button class="btn btn-danger btn-lg" id="funcionemarica1" role="button" aria-pressed="true" style="margin-left: 20px;">Cancelar</button>
+                                
+                                </div>
+                                
+                               </form>
+
+
+                            </div>
+
+                        </div>        
+                        
+                        <!-- Aqui termina el contenido-->
+                </div>
+            </div>
+                <div class="col-2" style="width: 500px"><!-- Esta es la parte lateral, basada en el design que hicieron-->
+
+                </div> 
+            
+            
+            
+                 <div class="row "> <!-- Aqui comienza el footer-->
+        
+                 <div class="col-12 ">
+
+                 <div class="row">
+                 <div class="col-4">
+                   <img src="img/Griffith_Logo_Rev_RGB.png" style="width: 38%; margin-left: 100px;">
+                 </div>
+                 <div class="col-4 text-center" style="color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+                   <i><h6> facebook/ElCondimentero.com  </h6></i>
+                   <i><h6> &#128222; 777 77 77  </h6></i>
+                   <i><h6> &#128231; Elcondimentero@condimentero.co</h6></i>
+                   <i><h6>&#174; Todos los derechos reservados</h6></i>
+               
+                 </div>
+                 <div class="col-4">
+                   <img src="img/logo.png" style="width: 30%; margin-left: 300px;">
+                 </div>
+                 </div>
+
+                 </div>
+                 </div> <!-- Finaliza el footer-->
+        </div>
+
+</body>
+
+</html>
